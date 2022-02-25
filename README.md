@@ -5,7 +5,7 @@
 ## Jumia Exercise
 
 This Task built with Laravel & Vue.js
-You Can Try Online vie [http://jumia-exercise.perfectsystem4u.com/](http://jumia-exercise.perfectsystem4u.com)
+You Can Try Online via [http://jumia-exercise.perfectsystem4u.com/](http://jumia-exercise.perfectsystem4u.com)
 ### Check list Done
 
 - [x] Show My Part of Skills In OOP (as task need)
