@@ -23,6 +23,7 @@
 </div>
 <script src="{{asset('assets/js/vue.js')}}"></script>
 <script src="{{asset('assets/js/axios.js')}}"></script>
+<script src="{{asset('assets/js/sweetalert.js')}}"></script>
 <script src="{{ asset('assets/js/laravel-vue-pagination.js') }}"></script>
 @stack('script')
 </body>

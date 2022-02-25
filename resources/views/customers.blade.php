@@ -95,9 +95,25 @@
                     this.loading=true;
                     axios.get('/customers', {params: this.filter}).then(response => {
                         this.customers_data = response.data.customers
-                    }).finally(()=>{
-                        this.loading=false;
+                    }).catch(error=> {
+                        new swal({
+                            title: "Something Went Wrong!",
+                            text:'Try Refresh',
+                            icon: "warning",
+                            dangerMode: true,
+                            buttons: {
+                                cancel: true,
+                                confirm: true,
+                            },
+                        }).then((refresh) => {
+                            if (refresh) {
+                                window.location.reload()
+                            }
+                        });
 
+                    })
+                        .finally(()=>{
+                        this.loading=false;
                     })
                 },
                 getCustomersPagination(page=1){
